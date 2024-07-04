@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+
+    <nav class="nav">
+      <img src="img/menu-Icon.png" alt="Icono Inicio" class="menuIcon" onclick="navigateToPage()"/>
+      <ul class="menu">
+        <li><a href="index.html" class="marked">Inicio</a></li>
+        <li><a href="envioNacio.html">Envíos Nacionales</a></li>
+        <li><a href="envioInter.html">Envíos Internacionales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <section>
+        <div class="cajaTrans">
+            <div class="cajaTexto">
+                <h2 class="tituloSelect">¿Cuanto va a costar mi envío?</h2>
+
+                <div class="cajaSelect">
+                  <p class="texto">Indique el destino de su envío</p>
+
+                  <select name="selectDestino" class="selectPrecio" id="selectDestino">
+                    <option value=""> - Seleccione un Destino - </option>
+                  </select>
+              </div>
+          
+              <div class="cajaSelect">
+                  <p class="texto">Indique su peso aproximado</p>
+                  
+                  <select name="selectPeso" class="selectPrecio" id="selectPeso">
+                    <option value=""> - Seleccione un peso - </option>
+                  </select>
+              </div>
+          
+              <div class="cajaSelect">
+                  <button class="botonPrecio" id="botonPrecio">Enviar</button>
+              </div>
+
+              <div class="resultadoText" id="resultado"></div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

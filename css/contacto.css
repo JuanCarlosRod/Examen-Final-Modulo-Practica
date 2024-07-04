@@ -1,0 +1,50 @@
+* {
+  font-size: 25px;
+}
+
+.formBox {
+  background-color: rgba(67, 63, 63, 0.784);
+  width: 50%;
+  height: 70vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .formClass {
+    width: 90%;
+    height: 90%;
+
+    p {
+      margin: 14px;
+    }
+
+    .boton {
+      width: 30%;
+      background-color: orange;
+      color: white;
+      border-radius: 15px;
+      height: 40px;
+      transition: 0.8s;
+    }
+
+    .boton:hover {
+      transition: 0.8s;
+      background-color: white;
+      color: orange;
+    }
+
+    .rojo {
+      color: red;
+    }
+
+    .errorInput {
+      border: 2px solid red;
+    }
+
+    .validoInput {
+      border: 2px solid greenyellow;
+    }
+  }
+}
